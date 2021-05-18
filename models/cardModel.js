@@ -39,9 +39,7 @@ const cardSchema = new mongoose.Schema(
       minlength: 3,
       maxlength: 99999999999,
     },
-    // הטייפ אומר שזה מסוג איי די של מונגו
-    // והריף בעצם מרמז שזה מפתח זר מקולקשן יוזר
-    user_id: {
+     user_id: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: 'User',
@@ -54,15 +52,12 @@ const cardSchema = new mongoose.Schema(
 
 const CardModel = mongoose.model('cards', cardSchema);
 
-// דואג להביא מספר רנדומלי ותמיד בודק שהוא לא במסד נתונים
-// ואם כן יביא אחד אחר עד שהוא ימצא אחד שלא קיים
 export const generateBizNumber = async (CardModel) => {
-  // ישאר בלולאה עד שלא ימצא מספר רנדומלי שלא קיים
+
   while (true) {
     let randomNumber = Math.floor(Math.random() * 899000) + 100000;
     let card = await CardModel.findOne({ bizNumber: randomNumber });
-    // אם לא מוצא את המספר במסד נתונים יחזיר אותו
-    if (!card) {
+        if (!card) {
       return String(randomNumber);
     }
   }
@@ -73,7 +68,6 @@ export const validateCard = (_card) => {
     bizName: Joi.string().min(2).max(255).required(),
     bizDescription: Joi.string().min(2).max(1024).required(),
     bizAddress: Joi.string().min(2).max(400).required(),
-    // regexp -> אומר שניתן להכניס רק מספרים בסטרינג
     bizPhone: Joi.string()
       .min(9)
       .max(10)
