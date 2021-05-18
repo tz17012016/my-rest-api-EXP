@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
 import generateToken from '../utils/generateToken.js';
-import { matchPassword } from '..//middleware/authMiddleware.js';
+import { matchPassword } from '../middleware/authMiddleware.js';
 import User, {
   validateUser,
   validateCards,
