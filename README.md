@@ -18,7 +18,7 @@ https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
 
 ### ES Modules in Node
 
-I us ECMAScript Modules in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
+I use ECMAScript Modules in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
 
 Also, when importing a file (not a package), be sure to add .js at the end or you will get a "module not found" error.
 
@@ -44,7 +44,7 @@ npm install
 ### Run
 ```
 
-# Run backend only
+# Run Server
 
 npm run server
 
@@ -76,18 +76,18 @@ npm run data:destroy
 
 ```
 
+### Sample User Logins
+
 
 ```
-
-Sample User Logins
 
 admin@example.com (Admin)
 123456
 
-john@example.com (Customer)
+john@example.com (User)
 123456
 
-jane@example.com (Customer)
+jane@example.com (User)
 123456
 
 ```
