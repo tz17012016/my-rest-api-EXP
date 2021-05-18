@@ -19,7 +19,7 @@ router.route('/login').post(authUser);
 router
   .route('/profile')
   .get(authToken, getUserProfile)
-  .put(authToken, admin, updateUserProfile);
+  .put(authToken, updateUserProfile);
 router
   .route('/cards')
   .get(authToken, getMyCards)
