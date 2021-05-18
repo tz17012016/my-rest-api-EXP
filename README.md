@@ -8,7 +8,7 @@ https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
 
 
 ## Features
-* Database seeder (products & users)
+* Database seeder (business & users)
 * Admin Role
 * Login / Register / Exit page
 * A business user can create multiple business cards for his companies
