@@ -99,7 +99,8 @@ jane@example.com (User)
 https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
 
 #### USERS
-* 
+
+
 * https://myrestapiexp.herokuapp.com/api/users/register - POST register a user
 * https://myrestapiexp.herokuapp.com/api/users/login - POST login a user
 * https://myrestapiexp.herokuapp.com/api/users/profile - GET  user profile
