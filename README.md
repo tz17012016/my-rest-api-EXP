@@ -2,9 +2,11 @@
  rest api business-cards->little project for my web bootcamp
  
 ### link to heroku: 
-for all the pages go to the end of the readme
+for all the pages go to the end of the read
+me
 
 https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
+
 
 
 ## Features
@@ -91,6 +93,13 @@ jane@example.com (User)
 123456
 
 ```
+
+### postman
+the best way to use it, is with postman :
+
+https://www.postman.com/downloads/
+
+just put those end points and have fun 🙂
 
 ### link to heroku: 
 
