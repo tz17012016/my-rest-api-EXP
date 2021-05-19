@@ -12,7 +12,7 @@ const getMyCards = asyncHandler(async (req, res, next) => {
   if (!req.query.numbers) {
     res
       .status(400)
-      .json({ msg: 'YOu need to send query numbers of real cards' });
+      .json({ msg: 'You need to send query numbers of real cards' });
   }
   let cardNumbers_ar = req.query.numbers.split(',');
   let cardsData = await CardModel.find({ bizNumber: { $in: cardNumbers_ar } });
