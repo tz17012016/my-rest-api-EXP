@@ -54,7 +54,6 @@ userSchema.pre('save', async function (next) {
 
 export const validateCards = (_card) => {
   let schema = Joi.object({
-    // min -> אורך המערך במקרה בשורה למטה
     cards: Joi.array().min(1).required(),
   });
   return schema.validate(_card);
