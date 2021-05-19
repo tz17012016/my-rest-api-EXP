@@ -94,7 +94,7 @@ jane@example.com (User)
 
 ```
 
-### postman
+### Postman
 the best way to use it, is with postman :
 
 https://www.postman.com/downloads/
@@ -120,7 +120,7 @@ https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
 * https://myrestapiexp.herokuapp.com/api/users/cards/ - GET user favorite cards
 * https://myrestapiexp.herokuapp.com/api/users/cards/ - PATCH user favorite cards
 
-#### BIZ CARDS
+#### Business CARDS
 
 * https://myrestapiexp.herokuapp.com/api/cards/ - GET all the cards
 * https://myrestapiexp.herokuapp.com/api/cards/ - POST create a new card
@@ -128,6 +128,6 @@ https://myrestapiexp.herokuapp.com/ - GET go to home page (index route)
 * https://myrestapiexp.herokuapp.com/api/cards/:id - PUT update a Card by id
 * https://myrestapiexp.herokuapp.com/api/cards/:id - DELETE delete a Card by id
 
-#### uploads
+#### Uploads
 
 * https://myrestapiexp.herokuapp.com/api/upload - POST upload a file 
