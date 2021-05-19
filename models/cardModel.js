@@ -51,9 +51,8 @@ const cardSchema = new mongoose.Schema(
 );
 
 const CardModel = mongoose.model('cards', cardSchema);
-
+//make a random biz number
 export const generateBizNumber = async (CardModel) => {
-
   while (true) {
     let randomNumber = Math.floor(Math.random() * 899000) + 100000;
     let card = await CardModel.findOne({ bizNumber: randomNumber });
